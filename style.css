@@ -1,0 +1,64 @@
+/* Basic reset for standard spacing and box sizing */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif; /* Clean and simple font */
+    background-color: #f4f4f8; /* Light grey background */
+    color: #333; /* Dark grey text for readability */
+    padding: 20px;
+}
+
+.header {
+    background-color: #ffffff; /* White background for the header */
+    padding: 20px 40px; /* Padding around content */
+    text-align: center; /* Center-align the elements in the header */
+}
+
+.search-container {
+    display: flex;
+    justify-content: center; /* Center the search bar horizontally */
+    margin-top: 20px;
+}
+
+.search-box {
+    width: 50%; /* Making the search box take half of its container's width */
+    position: relative; /* Position relative for absolute positioning inside elements */
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 8px; /* Rounded corners for the search box */
+    font-size: 16px; /* Larger font size for clarity */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Subtle shadow for 3D effect */
+}
+
+button {
+    position: absolute; /* Positioning the button inside the search box */
+    right: 0;
+    top: 0;
+    bottom: 0;
+    border: none;
+    background-color: #007BFF; /* Blue background for contrast */
+    color: white;
+    padding: 15px 20px;
+    border-top-right-radius: 8px; /* Rounded corners on the right */
+    border-bottom-right-radius: 8px;
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker blue on hover for feedback */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .search-box {
+        width: 100%; /* Full width for smaller screens */
+    }
+}
